@@ -211,5 +211,20 @@ p{
 .card1:hover{
     box-shadow: 0px 5px 8px 4px black;
 }
-
 /* Professional Experience ends */
+
+/* Education starts */
+.education{ 
+    padding: 15px;  
+}
+
+.edu-bio li{
+    padding:5px;
+    list-style-type: none;
+}
+
+.edu-bio a{
+    color: yellow;
+}
+
+/* Education ends */

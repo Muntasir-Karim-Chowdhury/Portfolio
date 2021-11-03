@@ -75,6 +75,117 @@ p{
 .education{ 
     padding: 30px;  
 }
-
-
 /* Education ends */
+/* Skills starts */
+
+.skills-logo{
+    text-align: center;
+    padding:15px;
+}
+
+.skills-logo img{
+    height: 100px;
+    width: 100px;
+    border: 2px solid yellow;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+.skills-title{
+    text-align: center;
+    background: #FFC40C;
+    padding: 1px;
+}
+.skill-list{
+    padding-right: 20px;
+}
+.skill-list li{
+    list-style-type: none;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin: 30px 10px;
+    position: relative;
+}
+.skill-list li::before{
+    content:'';
+    position: absolute;
+    background-color: #79B3B9;
+    top: calc(100% + 5px);
+    height: 10px;
+    width: 100%;
+    border-radius: 5px;
+
+}
+
+.skill-list li::after{
+    content:'';
+    position: absolute;
+    background-color: #e935e9;
+    top: calc(100% + 5px);
+    height: 10px;
+    width: 0;
+    border-radius: 5px;
+    left: 0;
+
+
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-timing-function:linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 5;
+}
+
+.skill-list li.c::after{
+    animation-name: c;
+}
+
+@keyframes c{
+    to{
+        width: 90%;
+    }
+}
+
+.skill-list li.python::after{
+    animation-name: python;
+}
+
+@keyframes python{
+    to{
+        width: 70%;
+    }
+}
+
+.skill-list li.html::after{
+    animation-name: html;
+}
+
+@keyframes html{
+    to{
+        width: 90%;
+    }
+}
+
+.skill-list li.css::after{
+    animation-name: css;
+}
+
+@keyframes css{
+    to{
+        width: 70%;
+    }
+}
+
+.skill-list li.bootstrap::after{
+    animation-name: bootstrap;
+}
+
+@keyframes bootstrap{
+    to{
+        width: 50%;
+    }
+}
+.skill-list p{
+    font-size: 1rem;
+    color: rgb(245, 245, 245);
+    opacity: 1;
+}
+/* Skills ends */

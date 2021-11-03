@@ -189,3 +189,9 @@ p{
     opacity: 1;
 }
 /* Skills ends */
+.pro-exp::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+/* Professional Experience ends */

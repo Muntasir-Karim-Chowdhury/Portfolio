@@ -226,5 +226,10 @@ p{
 .edu-bio a{
     color: yellow;
 }
-
 /* Education ends */
+
+/* Skills starts */
+.skills{ 
+    padding: 30px;  
+}
+/* Skills ends */
